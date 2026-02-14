@@ -116,20 +116,20 @@ public class Policy {
        double price = 600.0;
        
       
-       if (age > 50)
+ if (age > 50)
        
-        price += 75.0;
+    price += 75.0;
         
         
-         if(smokingStatus.equalsIgnoreCase("smoker")){
+ if(smokingStatus.equalsIgnoreCase("smoker")){
          
-             price = 100.0;
+     price = 100.0;
              }
              
-             double bmi = calculateBMI();
+double bmi = calculateBMI();
 
-        if(bmi > 35){
-            price += (bmi - 35) * 20;
+  if(bmi > 35){
+  price += (bmi - 35) * 20;
            }
         return price;
         
