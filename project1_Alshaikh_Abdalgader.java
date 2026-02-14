@@ -25,7 +25,7 @@ public static void main(String[] args){
      System.out.println("please enter thePolicyholder’s Last Name");
       String lastName = keyboard.nextLine();
       
-      System.out.println(" please enter your age ");
+      System.out.println("please enter your age ");
       int age = keyboard.nextInt();
       
     keyboard.nextLine(); // clear buffet
@@ -33,14 +33,14 @@ public static void main(String[] args){
        System.out.println("Please enter the Policyholder’s Smoking Status (smoker/non-smoker):");
         String smokingStatus = keyboard.nextLine(); 
         
-       System.out.println(" please enter the Policyholder’s height:");
+       System.out.println("please enter the Policyholder’s height:");
          double  height = keyboard.nextDouble();
        
        System.out.println("please enter the Policyholder’s weight:");
          double  weight = keyboard.nextDouble();
          
          
-         //creating policy object 
+         //creating policy object from the class 
       Policy p1 = new Policy(policyNumber, providerName, firstName,
                                     lastName, age, smokingStatus,
                                     height, weight);
@@ -57,7 +57,7 @@ public static void main(String[] args){
               System.out.println("Policy Holder Height : " + p1.getHeight());
               System.out.println("Policy Holder Weight : " + p1.getWeight());
               System.out.printf("BMI : %.2f\n",p1.calculateBMI());
-              System.out.printf(" Policy price : %.2f\n" , p1.calculatePolicyPrice());
+              System.out.printf("Policy price : %.2f\n" , p1.calculatePolicyPrice());
  
          
          }
