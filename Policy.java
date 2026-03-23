@@ -23,9 +23,17 @@ public class Policy {
    smokingStatus= "";
    height = 0.0;
    weight = 0.0;
+      
 }
-   //  constructor that accpet arguments 
-   
+   // constructor that accpet arguments 
+   //@param policyNumber .
+   //@param providerName
+   //@param firstName.
+   //@param lastName .
+   //@param age.
+   //@param smokingStatus.
+   //@param height.
+   //@param weight.
    
   public Policy (int policyNumber,String providerName , String firstName , String lastName , int age ,
   String smokingStatus , double height , double weight) {
@@ -101,7 +109,7 @@ public class Policy {
   public void setWeight( double weight){
   this.weight = weight;
   }
-  // calculate the BMI
+  // calculate the BMI 
   public double calculateBMI()
     {
         return (weight * 703) / (height * height);
